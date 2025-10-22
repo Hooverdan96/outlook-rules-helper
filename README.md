@@ -1,4 +1,4 @@
-# 1. Creating Export for Mail Rules
+# 1. Creating export for mail rules
 - Creating Outlook VBA script to export Outlook rules after selecting mailbox within Outlook
 - Not all rules/conditions/actions are covered yet.
 
@@ -34,7 +34,7 @@ olConditionSubject|Subject contains specific words.
 olConditionTo|Your name is in the To box.
 olConditionToOrCc|Message has your name in the To or Cc box.
 
-Available Rules for `OlRuleActionType`
+Available rules for `OlRuleActionType`
 |Constant|Value|Action Description
 |-|-|-
 olRuleActionMoveToFolder|1|Moves the message to the specified folder.
@@ -69,12 +69,17 @@ olRuleActionClearCategories|30|Clears all categories assigned to the message.
 olRuleActionMarkAsTask|41|Marks the message as a task for follow-up.
 olRuleActionUnknown|0|Unrecognized rule action (used for error handling).
 
-Other features
+## Other features
 - For troubleshooting purposes, choice between Immediate Window output and Excel
 - Excel output with some rudimentary formatting
 
-Current Prerequisites
+## Current prerequisites
 - local Microsoft® Outlook® for Microsoft 365 MSO installation on machine (testing for windows only), might work for other/earlier versions but no guarantees.
 - Enable Developer Mode
 - Allow Macros/Code execution on
 - Module Creation
+
+## Next steps:
+- clean up development, possibly refactor for more modularity
+- see whether the export can also be used for an upload/import function
+  - options to wipe/replace or append
